@@ -1,16 +1,34 @@
-# ISTTT24Data
-The network data for the ISTTT24 assignment paper 
-# for more information:
-> contact: yujiang@dtu.dk 
-# folders
+# Readme
+Data for the ISTTT24 paper title
+" Incorporating Personalization and Bounded Rationality into Stochastic Transit Assignment Model"
+for more information 
+contact: yujiang@dtu.dk 
+# Folder Instructions
 1. It contains two folders 
-   1. 1993, four node network 
-   2. SiouxFall: Add bus lines to the Siouxfall network data, the OD data is adjusted based onthe cost
-# instruction on files 
-1. BusCost: 
-   1. LineID: bus line index
-   2. Cost: cost between two stops
-2. BusFre: frequency of the bus lines 
-3. BusStops: secquence of the stops for each line 
-4. Graph: Number of nodes in the graph 
-5. OD: Odpair and demand values
+   1. 1993: four-node network 
+   2. SiouxFall: Sioux fall network with bus lines
+
+# Data files
+1. BusCost.csv
+   1. LineId: Bus line ID
+   2. Cost: travel time of each bus line segment
+2. BusFre.csv
+   1. LineId: Bus line ID
+   2. Fre: frequency of the line, No. buses/hour
+   3. Cap: Capacity of the bus, No. pas/bus
+3. BusStop.csv
+   1. LineId: Bus line ID
+   2. Stop: stop node number
+4. Graph.csv
+   1. No. of nodes in the network
+5. OD.csv
+   1. ID: OD pair ID
+   2. Origin: origin node
+   3. Dest：destination node
+   4. Demand: Demand level
+   5. Strategy: which strategy is used 
+      > the strategy index is slightly different from the ones used in the paper. In the code, Strategy S0 refers to the SUE, which it is Strategy S4 in the paper.
+   6. TT,WT,CT: Weighting parameters for the three PT attributes
+   7. B_TT,B_WT,W_CT: these parameters are not used in the ISTTT24 paper. 
+   8. ThetaWin, ThetaLoss: the theta value for the scale parameters associated with the relative advantages and disadvantages. 
+   9. Sat_TT, Sat_WT, Sat_CT: Satisfactory bounds for the three PT attributes
