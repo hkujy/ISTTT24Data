@@ -7,7 +7,7 @@ contact: yujiang@dtu.dk
 1. It contains two folders 
    1. 1993: four-node network 
    2. SiouxFall: Sioux fall network with bus lines
-
+   3. a excel for computing the example in the appendix E. 
 # Data files
 1. BusCost.csv
    1. LineId: Bus line ID
